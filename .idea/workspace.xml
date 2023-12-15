@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b00affd-f281-4ce4-a7bc-57a23db5d9c7" name="Changes" comment="" />
+    <list default="true" id="1b00affd-f281-4ce4-a7bc-57a23db5d9c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IAppLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Render.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-api-2.6.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-api-2.6.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-api-2.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-impl-2.6.2-javadoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-impl-2.6.2-sources.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-impl-2.6.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/We Learned A Lot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/We Learned A Lot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -14,16 +41,24 @@
   "associatedIndex": 5
 }]]></component>
   <component name="ProjectId" id="2ZYRSryab39Ip9txTfsl7fZH9lb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/awesome22/IdeaProjects/We Learned A Lot/tinylog-2.6.2",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -36,5 +71,8 @@
       <updated>1702597029304</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
