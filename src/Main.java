@@ -2,17 +2,33 @@ public class Main implements IAppLogic {
 
     public static void main(String[] args) {
         Main main = new Main();
-        Engine gameEng = new Engine("chapter-02", new Window.WindowOptions(), main);
+        Engine gameEng = new Engine("chapter-03", new Window.WindowOptions(), main);
         gameEng.start();
     }
 
     @Override
-    public void cleanup() {
-        // Nothing to be done yet
+    public void init(Window window, Scene scene, Render render) {
+        float[] positions = new float[]{
+                -0.5f, 0.5f, 0.0f,
+                -0.5f, -0.5f, 0.0f,
+                0.5f, -0.5f, 0.0f,
+                0.5f, 0.5f, 0.0f,
+        };
+        float[] colors = new float[]{
+                0.5f, 0.0f, 0.0f,
+                0.0f, 0.5f, 0.0f,
+                0.0f, 0.0f, 0.5f,
+                0.0f, 0.5f, 0.5f,
+        };
+        int[] indices = new int[]{
+                0, 1, 3, 3, 1, 2,
+        };
+        Mesh mesh = new Mesh(positions, colors, indices);
+        scene.addMesh("quad", mesh);
     }
 
     @Override
-    public void init(Window window, Scene scene, Render render) {
+    public void cleanup() {
         // Nothing to be done yet
     }
 

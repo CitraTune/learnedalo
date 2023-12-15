@@ -4,23 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b00affd-f281-4ce4-a7bc-57a23db5d9c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IAppLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Render.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/license.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-api-2.6.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-api-2.6.2-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-api-2.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-impl-2.6.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-impl-2.6.2-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tinylog-2.6.2/tinylog-impl-2.6.2.jar" afterDir="false" />
+    <list default="true" id="1b00affd-f281-4ce4-a7bc-57a23db5d9c7" name="Changes" comment="Finish This Project">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/tinylog_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Mesh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Projection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SceneRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShaderProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UniformsMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scene.frag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/scene.vert" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/We Learned A Lot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/We Learned A Lot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Render.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +49,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/awesome22/IdeaProjects/We Learned A Lot/tinylog-2.6.2",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,9 +71,24 @@
       <option name="presentableId" value="Default" />
       <updated>1702597029304</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finish This Project">
+      <option name="closed" value="true" />
+      <created>1702599509292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702599509293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Finish This Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish This Project" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
