@@ -18,6 +18,12 @@ public class Projection {
     }
 
     public void updateProjMatrix(int width, int height) {
+        //setPerspective method, very important
+        //Field of view: Sets the amount of degrees you can see in radians. Calculated in the FOV constant
+        //Aspect Ratio: The relationship or ratio between the width and the height of the render window.
+        //Z_NEAR. The close distance that objects stop being rendered at if they pass
+        //Z_FAR. The far distance that objects stop being rendered at if they pass.
+        //All of this together creates a perspective instead of orthographic view of the 3d objects. Incredibly useful.
         projMatrix.setPerspective(FOV, (float) width / height, Z_NEAR, Z_FAR);
     }
 }

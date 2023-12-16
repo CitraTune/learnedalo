@@ -1,6 +1,5 @@
 import org.lwjgl.opengl.GL30;
 import org.lwjgl.system.MemoryStack;
-
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.*;
@@ -12,7 +11,8 @@ public class Mesh {
     private int numVertices;
     private int vaoId;
     private List<Integer> vboIdList;
-    //Main method point- send vertices and the ordering of how they create triangles to the GPU memory
+
+    //Big Idea- send vertices and the ordering of how they create triangles to the GPU memory
     public Mesh(float[] positions, float[] colors, int[] indices) {
         //The MemoryStack is used to give this code to the OpenGl library by putting it offHeap whatever that means. Garbage collector will clean it up.
         try (MemoryStack stack = MemoryStack.stackPush()) {

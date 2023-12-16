@@ -36,6 +36,7 @@ public class Engine {
     }
 
     private void run() {
+        //Timing code, I really dont know whats going on
         long initialTime = System.currentTimeMillis();
         float timeU = 1000.0f / targetUps;
         float timeR = targetFps > 0 ? 1000.0f / targetFps : 0;
