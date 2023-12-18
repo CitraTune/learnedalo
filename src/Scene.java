@@ -18,6 +18,7 @@ public class Scene {
         projection = new Projection(width, height);
         textureCache = new TextureCache();
         camera = new Camera();
+        camera.setPosition(0,0.25f,1f);
         fog = new Fog();
 
     }

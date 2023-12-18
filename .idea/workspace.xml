@@ -5,35 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b00affd-f281-4ce4-a7bc-57a23db5d9c7" name="Changes" comment="Finish This Project">
-      <change afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Material.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ModelLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MouseInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TextureCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene.frag" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene.vert" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bluecar/0.25sizecar.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bluecar/0.25sizecar.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bluecar/bluecar.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bluecar/bluecar.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bluecar/bluecarlightobj.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/bluecar/bluecarlightobj.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/cube/cube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/quad/quad.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/quad/quad.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/quad/quad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/skybox/skybox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/terrain/terrain.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/terrain/terrain.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track2.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track2.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track3.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track3.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track4.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track4.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track5.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track5.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track6.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/models/track/track6.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IAppLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IAppLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mesh.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Projection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Render.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SceneRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SceneRender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShaderProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShaderProgram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UniformsMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniformsMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scene.frag" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/scene.vert" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,22 +68,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/awesome22/IdeaProjects/We Learned A Lot - Copy&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/awesome22/IdeaProjects/We Learned A Lot - Copy/src",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\awesome22\IdeaProjects\We Learned A Lot - Copy\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -94,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702599509293</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finish This Project">
+      <option name="closed" value="true" />
+      <created>1702893792025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702893792025</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
