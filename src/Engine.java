@@ -1,4 +1,7 @@
 
+
+
+
 public class Engine {
 
     public static final int TARGET_UPS = 30;
@@ -36,7 +39,6 @@ public class Engine {
     }
 
     private void run() {
-        //Timing code, I really dont know whats going on
         long initialTime = System.currentTimeMillis();
         float timeU = 1000.0f / targetUps;
         float timeR = targetFps > 0 ? 1000.0f / targetFps : 0;
@@ -52,6 +54,7 @@ public class Engine {
             deltaFps += (now - initialTime) / timeR;
 
             if (targetFps <= 0 || deltaFps >= 1) {
+                window.getMouseInput().input();
                 appLogic.input(window, scene, now - initialTime);
             }
 

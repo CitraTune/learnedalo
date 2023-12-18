@@ -1,13 +1,25 @@
+
+
 import java.util.*;
 
 public class Scene {
 
+    private Camera camera;
+    private Fog fog;
+    //private IGuiInstance guiInstance;
     private Map<String, Model> modelMap;
     private Projection projection;
+    //  private SceneLights sceneLights;
+    private TextureCache textureCache;
+    private SkyBox skyBox;
 
     public Scene(int width, int height) {
         modelMap = new HashMap<>();
         projection = new Projection(width, height);
+        textureCache = new TextureCache();
+        camera = new Camera();
+        fog = new Fog();
+
     }
     public void addEntity(Entity entity){
         //Organization stuff
@@ -28,20 +40,57 @@ public class Scene {
     }
 
 
+    public SkyBox getSkyBox() {
+        return skyBox;
+    }
+    public void setSkyBox(SkyBox skyBox) {
+        this.skyBox = skyBox;
+    }
+    public void cleanup() {
+        modelMap.values().forEach(Model::cleanup);
+    }
+
+    public Camera getCamera() {
+        return camera;
+    }
+    public Fog getFog() {
+        return fog;
+    }
+    public void setFog(Fog fog) {
+        this.fog = fog;
+    }
+
+//    public IGuiInstance getGuiInstance() {
+//        return guiInstance;
+//    }
+
+    public Map<String, Model> getModelMap() {
+        return modelMap;
+    }
+
+
     public Projection getProjection() {
         return projection;
+    }
+
+//    public SceneLights getSceneLights() {
+//        return sceneLights;
+//    }
+
+    public TextureCache getTextureCache() {
+        return textureCache;
     }
 
     public void resize(int width, int height) {
         projection.updateProjMatrix(width, height);
     }
 
-    public void cleanup() {
-        modelMap.values().forEach(Model::cleanup);
-    }
+//    public void setGuiInstance(IGuiInstance guiInstance) {
+//        this.guiInstance = guiInstance;
+//    }
 
-    public Map<String, Model> getModelMap() {
-        return modelMap;
-    }
+//    public void setSceneLights(SceneLights sceneLights) {
+//        this.sceneLights = sceneLights;
+//    }
 
 }

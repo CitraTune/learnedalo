@@ -1,5 +1,6 @@
 
 
+
 public interface IAppLogic {
 
     void cleanup();

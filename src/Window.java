@@ -1,9 +1,10 @@
+
+
 import org.lwjgl.glfw.*;
 import org.lwjgl.system.MemoryUtil;
 import org.tinylog.Logger;
 
 import java.util.concurrent.Callable;
-
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
@@ -14,6 +15,7 @@ public class Window {
 
     private final long windowHandle;
     private int height;
+    private MouseInput mouseInput;
     private Callable<Void> resizeFunc;
     private int width;
 
@@ -76,6 +78,8 @@ public class Window {
         glfwGetFramebufferSize(windowHandle, arrWidth, arrHeight);
         width = arrWidth[0];
         height = arrHeight[0];
+
+        mouseInput = new MouseInput(windowHandle);
     }
 
     public void cleanup() {
@@ -90,6 +94,10 @@ public class Window {
 
     public int getHeight() {
         return height;
+    }
+
+    public MouseInput getMouseInput() {
+        return mouseInput;
     }
 
     public int getWidth() {
