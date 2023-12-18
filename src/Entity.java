@@ -1,4 +1,5 @@
 import org.joml.*;
+
 import java.lang.Math;
 
 
@@ -69,7 +70,9 @@ public class Entity {
         //System.out.println(direction);
         position.add(direction);
         modelMatrix.identity().translate(position.x, position.y, position.z);
-
+        //System.out.println("x:" + position.x + " y:" + position.y + " z:" + position.z);
+        //rotation.getEulerAnglesXYZ(euler);
+        //System.out.println("quat x:" + rotation.x() + " quat y" + rotation.y() + " quat z" + rotation.z() + "quat angle" + rotation.angle());
         //recalculate();
     }
 

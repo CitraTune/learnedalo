@@ -37,7 +37,7 @@ public class Main implements IAppLogic {
 
         carEntity = new Entity("car-entity", carModel.getId());
         carEntity.setScale(0.25f);
-        carEntity.setPosition(0f, 0.095f, 0f);
+        carEntity.setPosition(0.2f, 0.095f, -0.5f);
         carEntity.updateModelMatrix();
         scene.addEntity(carEntity);
         track = new Entity("track-entity", trackModel.getId());
@@ -46,7 +46,7 @@ public class Main implements IAppLogic {
         //track.setRotation(1, 0, 0, (float)(Math.PI));
         track.updateModelMatrix();
         scene.addEntity(track);
-        carEntity.setRotation(0,1,0,(float)Math.PI);
+        carEntity.setRotation(0,0.71f,0,(float)Math.PI/2);
 
         String terrainModelId = "terrain";
         Model terrainModel = ModelLoader.loadModel(terrainModelId, "src/resources/models/terrain/terrain.obj",
@@ -77,6 +77,7 @@ public class Main implements IAppLogic {
         //move represents the difference in time since last run around
         float move = diffTimeMillis * MOVEMENT_SPEED;
         Camera camera = scene.getCamera();
+        camera.updateCamera();
 
         //Car
         if (window.isKeyPressed(GLFW_KEY_W)) {
@@ -116,6 +117,10 @@ public class Main implements IAppLogic {
         else if (window.isKeyPressed(GLFW_KEY_P)) {
             track.rotatez(move);
         }
+        camera.updateAngleToEntityAngle(carEntity.getRotation());
+        Matrix4f rotationMatrix = new Matrix4f().rotate(carEntity.getRotation());
+        rotationMatrix.getEulerAnglesXYZ(new Vector3f());
+        camera.positionCameraAtEntityOffset(carEntity, -1f* (float)Math.sin(rotationMatrix.getEulerAnglesXYZ(new Vector3f()).y()), 0.25f, -1f * (float)Math.cos(rotationMatrix.getEulerAnglesXYZ(new Vector3f()).y()));
         //Camera
         if (window.isKeyPressed(GLFW_KEY_UP)) {
             camera.moveForward2(move);
@@ -135,7 +140,7 @@ public class Main implements IAppLogic {
         MouseInput mouseInput = window.getMouseInput();
         if (mouseInput.isRightButtonPressed()) {
             Vector2f displVec = mouseInput.getDisplVec();
-            camera.addRotation((float) Math.toRadians(-displVec.x * MOUSE_SENSITIVITY), (float) Math.toRadians(-displVec.y * MOUSE_SENSITIVITY));
+            //camera.addRotation((float) Math.toRadians(-displVec.x * MOUSE_SENSITIVITY), (float) Math.toRadians(-displVec.y * MOUSE_SENSITIVITY));
         }
     }
 

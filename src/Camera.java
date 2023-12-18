@@ -51,6 +51,32 @@ public class Camera {
         speed = speed - (move * 0.005f);
 
     }
+    public void updateAngleToEntityAngle(Quaternionf quaternion){
+        Matrix4f rotationMatrix = new Matrix4f().rotate(quaternion);
+        rotationMatrix.getEulerAnglesXYZ(new Vector3f());
+        rotation.y = rotationMatrix.getEulerAnglesXYZ(new Vector3f()).y();
+        System.out.println(rotation.y/Math.PI);
+        /*viewMatrix.identity()
+                .rotateY(-(float)(rotation.y + Math.PI));*/
+    }
+    public void positionCameraAtEntityOffset(Entity entity, float offsetX, float offsetY, float offsetZ){
+        float entityX = entity.getPosition().x;
+        float entityY = entity.getPosition().y;
+        float entityZ = entity.getPosition().z;
+
+        float cameraX = entityX + offsetX;
+        float cameraY = entityY + offsetY;
+        float cameraZ = entityZ + offsetZ;
+
+        position.x = cameraX;
+        position.y = cameraY;
+        position.z = cameraZ;
+
+        recalculate();
+    }
+    public void updateCamera(){
+
+    }
     public void moveForward(Float move){
         //Friction
         if (Math.abs(speed) < 0.0001f) {
@@ -88,7 +114,7 @@ public class Camera {
         rotationQ.rotateAxis((125*move/(hundredSpeed + 300) ), 0, 1, 0);
         //applies rotation to the vertex matrix
         //viewMatrix.rotate(rotationQ);
-        position.x = Main.getCarEntity().getPosition().x * Math.cos();
+        //position.x = Main.getCarEntity().getPosition().x * Math.cos();
         recalculate();
 
     }
