@@ -120,6 +120,7 @@ public class Main implements IAppLogic {
         camera.updateAngleToEntityAngle(carEntity.getRotation());
         Matrix4f rotationMatrix = new Matrix4f().rotate(carEntity.getRotation());
         rotationMatrix.getEulerAnglesXYZ(new Vector3f());
+        //hi
         camera.positionCameraAtEntityOffset(carEntity, -1f* (float)Math.sin(rotationMatrix.getEulerAnglesXYZ(new Vector3f()).y()), 0.25f, -1f * (float)Math.cos(rotationMatrix.getEulerAnglesXYZ(new Vector3f()).y()));
         //Camera
         if (window.isKeyPressed(GLFW_KEY_UP)) {
