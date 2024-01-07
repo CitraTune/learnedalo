@@ -14,11 +14,11 @@ public class Main implements IAppLogic {
     private static Entity carEntity;
     private Entity track;
     private Entity[][] terrainEntities;
-
-
+    
+    //Starts and opens the window
     public static void main(String[] args) {
         Main main = new Main();
-        Engine gameEng = new Engine("chapter-11", new Window.WindowOptions(), main);
+        Engine gameEng = new Engine("Racing Game", new Window.WindowOptions(), main);
         gameEng.start();
     }
 
@@ -28,13 +28,14 @@ public class Main implements IAppLogic {
     }
     @Override
     public void init(Window window, Scene scene, Render render) {
+        //Creates objects of everything
         Model carModel = ModelLoader.loadModel("car-model", "src/resources/models/bluecar/0.25sizecar.obj",
                 scene.getTextureCache());
         scene.addModel(carModel);
         Model trackModel = ModelLoader.loadModel("track-model", "src/resources/models/track/track6.obj",
                 scene.getTextureCache());
         scene.addModel(trackModel);
-
+        
         carEntity = new Entity("car-entity", carModel.getId());
         carEntity.setScale(0.25f);
         carEntity.setPosition(0.2f, 0.095f, -0.5f);
@@ -78,7 +79,7 @@ public class Main implements IAppLogic {
         float move = diffTimeMillis * MOVEMENT_SPEED;
         Camera camera = scene.getCamera();
         camera.updateCamera();
-
+        //ORIGINAL INTENTION: Allow camera to follow the car's movements from a 3rd person view. Final result: Camera follows arrow keys.
         //Car
         if (window.isKeyPressed(GLFW_KEY_W)) {
             carEntity.accelerate(move);
